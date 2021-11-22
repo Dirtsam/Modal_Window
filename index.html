@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Popup_modal</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="Primary-heading">Animated Modal</h2>
+      <button id="showBtn" class="btn">Open modal</button>
+    </div>
+    <article class="modal" id="myModal">
+      <div class="modal__content">
+        <header class="modal__header">
+          <span class="close-btn">&times;</span>
+          <img src="./img/hero.jpg" alt="girl image" />
+        </header>
+        <div class="modal__body">
+          <h2>Join over 300,000 designers who get out new posts by email.</h2>
+          <ul class="list-item">
+            <li>New stories about great designers</li>
+            <li>Free downloads and goodies.</li>
+            <li>Design tips, tricks, and more!</li>
+          </ul>
+          <div>
+            <input type="email" class="email" required />
+            <button type="submit" class="btn sub-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <script src="./app.js"></script>
+  </body>
+</html>

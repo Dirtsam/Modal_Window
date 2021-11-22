@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: #0e1431;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+/* the modal */
+.modal {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000; /* Fallback color*/
+  background-color: rgba(0, 0, 0, 0.4); /* color w/ opacity*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* modal content */
+
+.modal__content {
+  position: relative;
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: animatetop 0.4s;
+  -webkit-animation: animatetop 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* modal header */
+
+.modal__header {
+  padding: 0.5rem 1rem 1.5rem;
+}
+
+.modal__body {
+  padding: 0.5rem 1rem;
+}
+
+/* heading */
+
+.modal__header h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding: 0 0.2rem;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.list-item {
+  list-style: none;
+}
+
+ul > li {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+input {
+  width: 68%;
+  font-size: 1rem;
+  padding: 10px 12px;
+}
+
+/* subscribe button */
+.btn {
+  padding: 12.5px 12px;
+  font-size: 1rem;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background: crimson;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(1.2);
+}
+.modal__body div {
+  margin: 20px 0;
+}
+
+/* The Close Button */
+.close-btn {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  input {
+    width: 100%;
+  }
+  .sub-btn {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+}
